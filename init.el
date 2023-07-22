@@ -20,7 +20,10 @@
  '(org-agenda-files nil)
  '(package-selected-packages
    '(auctex pdf-tools evil magit no-littering ement mastodon sudo-edit spacemacs-theme solarized-theme))
+
  '(wdired-allow-to-change-permissions t))
+;; Allow modifying permissions in wdired
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
