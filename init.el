@@ -19,7 +19,7 @@
    '("fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" default))
  '(org-agenda-files nil)
  '(package-selected-packages
-   '(evil magit no-littering ement mastodon sudo-edit spacemacs-theme solarized-theme))
+   '(auctex pdf-tools evil magit no-littering ement mastodon sudo-edit spacemacs-theme solarized-theme))
  '(wdired-allow-to-change-permissions t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
