@@ -1,6 +1,6 @@
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-;; add MELPA package source
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
+;; add MELPA Stable package source
 
 (global-set-key (kbd "C-c l") #'org-store-link)
 (global-set-key (kbd "C-c a") #'org-agenda)
