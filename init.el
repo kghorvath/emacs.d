@@ -30,9 +30,6 @@
  ;; If there is more than one, they won't work right.
  )
 
-(load-theme 'tokyo t)
-;; load custom theme
-
 (scroll-bar-mode -1)
 ;; customize appearance
 
@@ -48,3 +45,6 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (require 'init-mastodon)
 ;; load additional files
+
+(load-theme 'tokyo t)
+;; load custom theme
