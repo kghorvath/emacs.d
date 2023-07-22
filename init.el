@@ -19,8 +19,7 @@
    '("fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" default))
  '(org-agenda-files nil)
  '(package-selected-packages
-   '(auctex pdf-tools evil magit no-littering ement mastodon sudo-edit spacemacs-theme solarized-theme))
-
+   '(ef-themes auctex pdf-tools evil magit no-littering ement mastodon sudo-edit spacemacs-theme solarized-theme))
  '(wdired-allow-to-change-permissions t))
 ;; Allow modifying permissions in wdired
 
@@ -31,8 +30,7 @@
  ;; If there is more than one, they won't work right.
  )
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'monokai t)
+(load-theme 'ef-cherie t)
 ;; load custom theme
 
 (scroll-bar-mode -1)
@@ -46,6 +44,7 @@
 ;; (evil-mode 1)
 ;; enable evil mode
 
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (require 'init-mastodon)
-;; load additional init files
+;; load additional files
