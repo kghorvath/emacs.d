@@ -30,7 +30,7 @@
  ;; If there is more than one, they won't work right.
  )
 
-(load-theme 'ef-cherie t)
+(load-theme 'ef-symbiosis t)
 ;; load custom theme
 
 (scroll-bar-mode -1)
