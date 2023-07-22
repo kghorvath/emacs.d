@@ -43,9 +43,9 @@
 (require 'evil)
 ;; enable packages
 
-(setq mastodon-instance-url "https://social.kghorvath.com"
-      mastodon-active-user "kamin")
-;; mastodon
-
-(evil-mode 1)
+;; (evil-mode 1)
 ;; enable evil mode
+
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(require 'init-mastodon)
+;; load additional init files
