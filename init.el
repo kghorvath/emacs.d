@@ -15,12 +15,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(wdired-allow-to-change-permissions t)
  '(custom-safe-themes
    '("fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" default))
  '(org-agenda-files nil)
  '(package-selected-packages
-   '(magit no-littering ement mastodon sudo-edit spacemacs-theme solarized-theme)))
+   '(evil magit no-littering ement mastodon sudo-edit spacemacs-theme solarized-theme))
+ '(wdired-allow-to-change-permissions t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -37,8 +37,12 @@
 
 (require 'no-littering)
 (require 'sudo-edit)
+(require 'evil)
 ;; enable packages
 
 (setq mastodon-instance-url "https://social.kghorvath.com"
       mastodon-active-user "kamin")
 ;; mastodon
+
+(evil-mode 1)
+;; enable evil mode
