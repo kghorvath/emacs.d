@@ -46,6 +46,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (require 'init-mastodon)
+(require 'init-gnus)
 ;; load additional files
 
 (load-theme 'tokyo t)
