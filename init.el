@@ -1,6 +1,6 @@
 (require 'package)
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
-;; add MELPA Stable package source
+(add-to-list 'package-archives '("melpa-stable" . "https://melpa.org/packages/"))
+;; add MELPA package source
 
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)

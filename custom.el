@@ -10,7 +10,7 @@
  '(display-time-mode t)
  '(org-agenda-files nil t)
  '(package-selected-packages
-   '(corfu-terminal kind-icon corfu which-key yaml-mode json-mode markdown-mode auctex pdf-tools magit no-littering mastodon sudo-edit))
+   '(ebuku corfu-terminal kind-icon corfu which-key yaml-mode json-mode markdown-mode auctex pdf-tools magit no-littering mastodon sudo-edit))
  '(server-mode t)
  '(visible-bell t)
  '(wdired-allow-to-change-permissions t))
