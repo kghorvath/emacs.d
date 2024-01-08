@@ -41,6 +41,9 @@
 (setq tab-always-indent 'complete)
 ;; corfu settings
 
+(setq shell-prompt-pattern '"^[^#$%>\n]*~?[#$%>] *")
+;; fix so ZSH doesn't break TRAMP
+
 (use-package which-key
   :ensure t
   :config
@@ -63,8 +66,9 @@
   (load-theme 'monokai))
 ;; load custom theme
 
-(load "~/.emacs.d/private/gnus.el")
-(load "~/.emacs.d/private/mastodon.el")
+;; (load "~/.emacs.d/private/gnus.el")
+;; (load "~/.emacs.d/private/mastodon.el")
 (load "~/.emacs.d/lisp/keybindings.el")
 (load "~/.emacs.d/lisp/org-settings.el")
+(load "~/.emacs.d/lisp/env.el")
 ;; load additional files
