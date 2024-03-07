@@ -6,15 +6,26 @@
 (load custom-file)
 ;; load custom file
 
+(defun is-in-terminal()
+    (not (display-graphic-p)))
+;; Define function to check if we're in a terminal
+
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (column-number-mode)
 (pixel-scroll-precision-mode)
+(when window-system
+  (set-frame-position (selected-frame) 0 0)
+  (set-frame-size (selected-frame) 80 40))
 ;; customize appearance
 
 (when (display-graphic-p)
   (context-menu-mode))
 ;; enable right click menu
+
+(when (is-in-terminal)
+  (xterm-mouse-mode))
+;; enable mouse mode in terminal
 
 (cua-mode)
 ;; enable CUA mode
@@ -62,12 +73,28 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 ;; load additional themes
 
+;; Only load themes in graphical mode
 (when (display-graphic-p)
-  (load-theme 'monokai))
+  (load-theme 'monokai t))
+
+;; Load themes in daemon mode
+;;(if (daemonp)
+;;    (add-hook 'after-make-frame-functions
+;;        (lambda (frame)
+;;            (select-frame frame)
+;;            (load-theme 'monokai t)))
+;;    (load-theme 'monokai t))
+
 ;; load custom theme
 
 ;; (load "~/.emacs.d/private/gnus.el")
 ;; (load "~/.emacs.d/private/mastodon.el")
+
+(set-frame-parameter nil 'alpha-background 100)
+(add-to-list 'default-frame-alist '(alpha-background . 100))
+;; Set transparency in graphical mode
+
+(load "~/.emacs.d/lisp/functions.el")
 (load "~/.emacs.d/lisp/keybindings.el")
 (load "~/.emacs.d/lisp/org-settings.el")
 (load "~/.emacs.d/lisp/env.el")
