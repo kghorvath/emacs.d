@@ -87,7 +87,7 @@
 
 ;; load custom theme
 
-;; (load "~/.emacs.d/private/gnus.el")
+(load "~/.emacs.d/private/gnus.el")
 ;; (load "~/.emacs.d/private/mastodon.el")
 
 (set-frame-parameter nil 'alpha-background 100)
