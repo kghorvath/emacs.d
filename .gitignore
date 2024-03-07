@@ -35,6 +35,7 @@
 ac-comphist.dat
 auto-save-list/
 backup/
+%backup%~
 bbdb
 bookmarks
 crown/
