@@ -75,7 +75,7 @@
 
 ;; Only load themes in graphical mode
 (when (display-graphic-p)
-  (load-theme 'monokai t))
+  (load-theme 'challenger-deep t))
 
 ;; Load themes in daemon mode
 ;;(if (daemonp)
@@ -88,10 +88,11 @@
 ;; load custom theme
 
 (load "~/.emacs.d/private/gnus.el")
+(load "~/.emacs.d/private/elfeed.el")
 ;; (load "~/.emacs.d/private/mastodon.el")
 
-(set-frame-parameter nil 'alpha-background 100)
-(add-to-list 'default-frame-alist '(alpha-background . 100))
+(set-frame-parameter nil 'alpha-background 85)
+(add-to-list 'default-frame-alist '(alpha-background . 85))
 ;; Set transparency in graphical mode
 
 (load "~/.emacs.d/lisp/functions.el")
