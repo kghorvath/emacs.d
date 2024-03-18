@@ -73,9 +73,9 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 ;; load additional themes
 
-;; Only load themes in graphical mode
 (when (display-graphic-p)
   (load-theme 'challenger-deep t))
+;; Only load themes in graphical mode
 
 ;; Load themes in daemon mode
 ;;(if (daemonp)
@@ -85,11 +85,9 @@
 ;;            (load-theme 'monokai t)))
 ;;    (load-theme 'monokai t))
 
-;; load custom theme
-
 (load "~/.emacs.d/private/gnus.el")
 (load "~/.emacs.d/private/elfeed.el")
-;; (load "~/.emacs.d/private/mastodon.el")
+(load "~/.emacs.d/private/mastodon.el")
 
 (set-frame-parameter nil 'alpha-background 85)
 (add-to-list 'default-frame-alist '(alpha-background . 85))

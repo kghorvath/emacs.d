@@ -10,9 +10,9 @@
  '(dired-listing-switches "-alh")
  '(display-time-mode t)
  '(inhibit-startup-screen nil)
- '(org-agenda-files nil)
+ '(org-agenda-files nil t)
  '(package-selected-packages
-   '(elfeed-protocol elfeed challenger-deep-theme vterm elpher ebuku corfu-terminal kind-icon corfu which-key yaml-mode json-mode markdown-mode auctex pdf-tools magit no-littering mastodon sudo-edit))
+   '(snow elfeed-protocol elfeed challenger-deep-theme vterm elpher ebuku corfu-terminal kind-icon corfu which-key yaml-mode json-mode markdown-mode auctex pdf-tools magit no-littering mastodon sudo-edit))
  '(server-mode nil)
  '(visible-bell t)
  '(wdired-allow-to-change-permissions t))
