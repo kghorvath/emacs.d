@@ -64,6 +64,9 @@
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup/")))
 ;; put all backup files in .emacs.d
 
+(setq create-lockfiles nil)
+;; Disable lockfiles
+
 (require 'no-littering)
 (require 'sudo-edit)
 ;; enable packages
@@ -74,7 +77,8 @@
 ;; load additional themes
 
 (when (display-graphic-p)
-  (load-theme 'challenger-deep t))
+  ;;(load-theme 'challenger-deep t))
+  (load-theme 'wombat t))
 ;; Only load themes in graphical mode
 
 ;; Load themes in daemon mode
@@ -85,12 +89,12 @@
 ;;            (load-theme 'monokai t)))
 ;;    (load-theme 'monokai t))
 
-(load "~/.emacs.d/private/gnus.el")
-(load "~/.emacs.d/private/elfeed.el")
-(load "~/.emacs.d/private/mastodon.el")
+;;(load "~/.emacs.d/private/gnus.el")
+;;(load "~/.emacs.d/private/elfeed.el")
+;;(load "~/.emacs.d/private/mastodon.el")
 
-(set-frame-parameter nil 'alpha-background 85)
-(add-to-list 'default-frame-alist '(alpha-background . 85))
+;;(set-frame-parameter nil 'alpha-background 85)
+;;(add-to-list 'default-frame-alist '(alpha-background . 85))
 ;; Set transparency in graphical mode
 
 (load "~/.emacs.d/lisp/functions.el")
