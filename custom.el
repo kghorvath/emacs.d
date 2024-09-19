@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("ed5afe11def738a452af6d1070faaa98a3e32e5a22c179e4e7c4c40ffff93478" "37c8c2817010e59734fe1f9302a7e6a2b5e8cc648cf6a6cc8b85f3bf17fececf" "fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" default))
+   '("e410458d3e769c33e0865971deb6e8422457fad02bf51f7862fa180ccc42c032" "9a977ddae55e0e91c09952e96d614ae0be69727ea78ca145beea1aae01ac78d2" "ed5afe11def738a452af6d1070faaa98a3e32e5a22c179e4e7c4c40ffff93478" "37c8c2817010e59734fe1f9302a7e6a2b5e8cc648cf6a6cc8b85f3bf17fececf" "fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" default))
  '(delete-selection-mode nil)
  '(dired-kill-when-opening-new-dired-buffer t)
  '(dired-listing-switches "-alh")
@@ -12,7 +12,7 @@
  '(inhibit-startup-screen nil)
  '(org-agenda-files nil t)
  '(package-selected-packages
-   '(snow elfeed-protocol elfeed challenger-deep-theme vterm elpher ebuku corfu-terminal kind-icon corfu which-key yaml-mode json-mode markdown-mode auctex pdf-tools magit no-littering mastodon sudo-edit))
+   '(modus-themes casual snow elfeed-protocol elfeed challenger-deep-theme vterm elpher ebuku corfu-terminal kind-icon corfu which-key yaml-mode json-mode markdown-mode auctex pdf-tools magit no-littering mastodon sudo-edit))
  '(server-mode nil)
  '(visible-bell t)
  '(wdired-allow-to-change-permissions t))

@@ -61,6 +61,10 @@
   (which-key-mode))
 ;; enable which-key
 
+(require 'casual)
+(define-key calc-mode-map (kbd "C-o") 'casual-main-menu)
+;; enable casual
+
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup/")))
 ;; put all backup files in .emacs.d
 
@@ -74,7 +78,8 @@
 ;; load additional themes
 
 (when (display-graphic-p)
-  (load-theme 'challenger-deep t))
+  (load-theme 'modus-vivendi t))
+;;(load-theme 'challenger-deep t))
 ;; Only load themes in graphical mode
 
 ;; Load themes in daemon mode
@@ -89,8 +94,8 @@
 (load "~/.emacs.d/private/elfeed.el")
 (load "~/.emacs.d/private/mastodon.el")
 
-(set-frame-parameter nil 'alpha-background 85)
-(add-to-list 'default-frame-alist '(alpha-background . 85))
+;;(set-frame-parameter nil 'alpha-background 85)
+;;(add-to-list 'default-frame-alist '(alpha-background . 85))
 ;; Set transparency in graphical mode
 
 (load "~/.emacs.d/lisp/functions.el")

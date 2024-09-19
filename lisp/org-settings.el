@@ -2,7 +2,7 @@
 (setq org-agenda-files '("inbox.org" "work.org"))
 
 ;; (add-hook 'org-mode-hook 'variable-pitch-mode)
-(setq org-hide-emphasis-markers t)
+;; (setq org-hide-emphasis-markers t)
 ;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 (font-lock-add-keywords 'org-mode
